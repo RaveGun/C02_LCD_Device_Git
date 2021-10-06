@@ -9,10 +9,10 @@
  * ********************************* */
 static void backupData(void)
 {
-    /* Backup date */
+    /* Backup data */
     f = SPIFFS.open(filename, "w");
     if (f) {
-      /* File found read back the values */
+      /* File found write the values */
       uint32_t bytesOut = f.write( (char *)&logData[0], sizeof(logData) );
       if(bytesOut != sizeof(logData))
       {

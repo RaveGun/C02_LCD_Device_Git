@@ -22,12 +22,6 @@ Adafruit_ILI9341 display = Adafruit_ILI9341(cs, dc);
 
 WiFiClient wifi_client;
 MQTTClient mqtt(256+128);
-/*
-Adafruit_MQTT_Client mqtt(&wifi_client, MQTT_SERVER, MQTT_SERVERPORT, MQTT_USERNAME, MQTT_KEY);
-Adafruit_MQTT_Publish mqtt_co2_level = Adafruit_MQTT_Publish(&mqtt, "cotwo/sensor/cotwo_level/state");
-Adafruit_MQTT_Publish mqtt_co2_dicovery = Adafruit_MQTT_Publish(&mqtt, "mqtt/homeassistant/sensor/cotwo/cotwo_level/config");
-*/
-
 
 uint32_t targetTime = 0;                    // for next 1 second timeout
 int32_t logData[SCREEN_X_SIZE];
