@@ -71,9 +71,6 @@ extern Adafruit_ILI9341 display;
 
 extern WiFiClient wifi_client;
 extern MQTTClient mqtt;
-// extern Adafruit_MQTT_Client mqtt;
-// extern Adafruit_MQTT_Publish mqtt_co2_level;
-// extern Adafruit_MQTT_Publish mqtt_co2_dicovery;
 
 extern const char* filename;
 extern File f;
